@@ -48,3 +48,27 @@ table {
 
 
 /* Custom CSS below */
+
+body {
+    display: grid;
+    grid-template: 25vh 25vh 25vh 25vh / 25vw 25vw 25vw 25vw;
+    grid-template-areas: "sidebar header header header"
+    "sidebar main-content main-content main-content"
+    "sidebar main-content main-content main-content"
+    "sidebar main-content main-content main-content";
+}
+
+#sidebar {
+    background-color: lightblue;
+    grid-area: sidebar;
+}
+
+#header {
+    background-color: antiquewhite;
+    grid-area: header;
+}
+
+#main-content {
+    background-color: aliceblue;
+    grid-area: main-content;
+}
