@@ -49,6 +49,16 @@ table {
 
 /* Custom CSS below */
 
+@font-face {
+    font-family: kiona-regular;
+    src: url(./resources/Kiona-Regular.ttf);
+}
+
+:root {
+	font-family: kiona-regular, 'Poopins', sans-serif;
+	box-sizing: border-box;
+}
+
 body {
     display: grid;
     grid-template: 25vh 25vh 25vh 25vh / 25vw 25vw 25vw 25vw;
@@ -59,8 +69,18 @@ body {
 }
 
 #sidebar {
-    background-color: lightblue;
     grid-area: sidebar;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-auto-rows: 7vh;
+    background-color: blue;
+    color: white;
+    font-size: 28px;
+}
+
+#sidebar-header {
+    font-size: 38px;
 }
 
 #header {
