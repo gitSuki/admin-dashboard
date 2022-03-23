@@ -61,8 +61,10 @@ table {
 
 body {
     display: grid;
-    grid-template: 25vh 25vh 25vh 25vh / 25vw 25vw 25vw 25vw;
+    grid-template: 25vh 25vh 25vh 25vh 25vh 25vh / 25vw 27.5vw 27.5vw 20vw;
     grid-template-areas: "sidebar header header header"
+    "sidebar main-content main-content main-content"
+    "sidebar main-content main-content main-content"
     "sidebar main-content main-content main-content"
     "sidebar main-content main-content main-content"
     "sidebar main-content main-content main-content";
@@ -79,16 +81,49 @@ body {
     font-size: 28px;
 }
 
-#sidebar-header {
+.sidebar-header {
     font-size: 38px;
 }
 
 #header {
-    background-color: antiquewhite;
     grid-area: header;
 }
 
 #main-content {
-    background-color: aliceblue;
     grid-area: main-content;
+    display: grid;
+    grid-template: 62.5vh 62.5vh / 27.5vw 27.5vw 20vw;
+    grid-template-areas: "projects projects announcements"
+    "projects projects trending";
+    background-color: lightgray;
+    font-size: 28px;
+}
+
+#projects {
+    grid-area: projects;
+}
+
+#projects-header {
+    position: absolute;
+    padding: 1em;
+    padding-top: 2em;
+}
+
+#project-grid {
+    padding-top: 3em;
+    display: grid;
+    grid-template: 37.5vh 37.5vh 37.5vh / 27.5vw 27.5vw;
+}
+
+.project {
+    margin: 1em;
+    background-color: white;
+}
+
+#announcements {
+    grid-area: announcements;
+}
+
+#project-content {
+    grid-area: trending;
 }
