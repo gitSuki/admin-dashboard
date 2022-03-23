@@ -124,6 +124,31 @@ body {
     grid-area: announcements;
 }
 
-#project-content {
+#announcements-header {
+    position: absolute;
+    padding-top: 2em;
+}
+
+#announcement-section {
+    padding-top: 3em;
+}
+
+.announcement {
+    margin-top: 1em;
+    background-color: white;
+}
+
+#trending {
     grid-area: trending;
+}
+
+#trending-header {
+    position: absolute;
+    padding: 1em;
+    padding-top: 2em;
+}
+
+.trending {
+    background-color: white;
+    margin-top: 1em;
 }
