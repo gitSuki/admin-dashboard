@@ -87,6 +87,51 @@ body {
 
 #header {
     grid-area: header;
+    padding: 1em;
+    display: grid;
+    grid-template: 40% 60% / 60% 40%;
+}
+
+#searchbar {
+    display: flex;
+    align-items: center;
+    margin-left: 3em;
+}
+
+input {
+    font-size: 20px;
+    width: 60%;
+    background-color: lightgray;
+}
+
+#alert {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#username {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 18px;
+    margin-left: 3em;
+}
+
+#name {
+    font-size: 30px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    font-size: 20px;
+    height: 2.5em;
+    width: 6em;
 }
 
 #main-content {
