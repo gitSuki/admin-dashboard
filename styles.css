@@ -76,7 +76,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-auto-rows: 2em;
-    background-color: blue;
+    background-color: #64748b;
     color: white;
     font-size: 28px;
 }
@@ -87,9 +87,10 @@ body {
 
 #header {
     grid-area: header;
+    background-color: #f8fafc;
     padding: 1em;
     display: grid;
-    grid-template: 40% 60% / 60% 40%;
+    grid-template: 1fr 2fr / 3fr 2fr;
 }
 
 #searchbar {
@@ -101,7 +102,10 @@ body {
 input {
     font-size: 20px;
     width: 60%;
-    background-color: lightgray;
+    background-color: #e2e8f0;
+    height: 1.4em;
+    border: none;
+    border-radius: 0.5em;
 }
 
 #alert {
@@ -129,18 +133,23 @@ input {
 }
 
 button {
+    background-color: #94a3b8;
+    color: white;
+    border: none;
+    border-radius: 1em;
     font-size: 20px;
     height: 2.5em;
-    width: 6em;
+    width: 7em;
 }
 
 #main-content {
     grid-area: main-content;
+    overflow: auto;
     display: grid;
     grid-template: repeat(2, 1fr) / 3fr 3fr 2fr;
     grid-template-areas: "projects projects announcements"
     "projects projects trending";
-    background-color: lightgray;
+    background-color: #e2e8f0;
     font-size: 28px;
 }
 
