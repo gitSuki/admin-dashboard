@@ -127,6 +127,12 @@ img {
     display: flex;
     align-items: center;
     margin-left: 3em;
+    gap: 1em;
+}
+
+#search-icon {
+    height: 35px;
+    width: 35px;
 }
 
 input {
@@ -144,16 +150,41 @@ input {
     align-items: center;
 }
 
+#notification-icon {
+    height: 35px;
+    width: 35px;
+}
+
+#name-div {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#profile-notification-icon {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+}
+
 #username {
     display: flex;
     align-items: center;
     gap: 1em;
     font-size: 20px;
-    margin-left: 3em;
+    margin-left: 1em;
 }
 
 #name {
     font-size: 36px;
+}
+
+#profile-icon {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
 }
 
 #buttons {
@@ -264,12 +295,16 @@ hr {
 
 .trending {
     display: flex;
+    gap: 0.75em;
     margin-top: 1em;
     font-size: 24px;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-    padding-top: 0.75em;
-    padding-bottom: 0.75em;
+    padding: 1em;
+}
+
+.trending-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
 }
 
 .trending-project {
