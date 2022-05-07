@@ -217,6 +217,12 @@ button {
     padding-bottom: 0.25em;
 }
 
+hr {
+    margin-left: 1em;
+    margin-right: 1em;
+    color: #1e293b;
+}
+
 #trending {
     grid-area: trending;
 }
