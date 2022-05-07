@@ -72,17 +72,43 @@ body {
 
 #sidebar {
     grid-area: sidebar;
-    padding: 1em;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-auto-rows: 2em;
-    background-color: #64748b;
-    color: white;
+    position: fixed;
+    width: 10.5em;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #94a3b8;
+    color: black;
     font-size: 28px;
+    padding: 1em;
 }
 
 .sidebar-header {
     font-size: 38px;
+    height: 85%;
+    width: 85%;
+    padding-left: 0em;
+}
+
+#upper-sidebar {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-auto-rows: 2em;
+
+}
+
+#lower-sidebar {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-auto-rows: 2em;
+
+}
+
+img {
+    height: 60%;
+    width: 60%;
+    padding-left: 0.5em;
 }
 
 #header {
