@@ -73,36 +73,39 @@ body {
 #sidebar {
     grid-area: sidebar;
     position: fixed;
-    width: 10.5em;
-    height: 95vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background-color: #94a3b8;
+    width: 10.5em;
+    height: 95vh;
+    background-color: #a1aec0;
     color: black;
     font-size: 28px;
     padding: 1em;
 }
 
-.sidebar-header {
+#sidebar-header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     font-size: 38px;
-    height: 85%;
-    width: 85%;
+    margin-bottom: 1em;
+}
+
+#sidebar-img {
     padding-left: 0em;
+    height: 75%;
+    width: 75%;
 }
 
-#upper-sidebar {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-auto-rows: 2em;
-
+#sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
-#lower-sidebar {
+li {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-auto-rows: 2em;
-
+    grid-template-columns: 1fr 3fr;
 }
 
 img {
